@@ -30,6 +30,7 @@ nav div:hover{
     padding: 10px;
 }
 
+
 #brandName{
     
     flex-basis: 60%;
@@ -165,3 +166,22 @@ nav div:hover{
     margin: 0;
     font-weight: lighter;
 }
+
+
+@media only screen and (max-width: 600px) {
+    #dashboard {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .profileCard .left{
+        align-items : initial;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    .profileCard .right img{
+        width: 100px;
+        height : 100px;
+    }
+  }
