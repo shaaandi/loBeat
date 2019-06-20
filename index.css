@@ -199,4 +199,8 @@ nav div:hover{
         width: 100px;
         height : 100px;
     }
+
+    #imagesDiv{
+        display: block;
+    }
   }
