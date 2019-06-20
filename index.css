@@ -169,6 +169,21 @@ nav div:hover{
 
 
 @media only screen and (max-width: 600px) {
+
+    nav{
+        font-size: 15px;
+    }
+
+    #bandName h2{
+        font-size: 30px;
+        font-weight: lighter;
+
+    }
+
+    #bandName img {
+        width: 100px;   
+    }
+
     #dashboard {
       flex-direction: column;
       height: auto;
