@@ -14,7 +14,7 @@ function showSlides() {
   if (slideIndex > slides.length) {slideIndex = 1}    
 //   slides[slideIndex-1].style.width = "100%"; 
   slides[slideIndex-1].style.height = "500px";  
-  captions[slideIndex-1].style.fontSize = "30"
+  captions[slideIndex-1].style.fontSize = "20"
   setTimeout(showSlides, 3500); 
 }
 
