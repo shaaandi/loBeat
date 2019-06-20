@@ -1,6 +1,11 @@
 body{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: aliceblue;
     border-bottom: solid brown 3px;
     margin-bottom: 0;
@@ -8,8 +13,14 @@ body{
 
 nav{
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     font-size: 20px;
     padding: 15px;
     
@@ -24,8 +35,12 @@ nav div:hover{
     cursor: pointer;
 }
 #dashboard{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     height: 100vh;
     padding: 10px;
 }
@@ -33,11 +48,22 @@ nav div:hover{
 
 #brandName{
     
-    flex-basis: 60%;
+    -ms-flex-preferred-size: 60%;
+    
+        flex-basis: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
@@ -63,22 +89,38 @@ nav div:hover{
 
 #howItWorks{
     
-    flex-basis: 70%;
+    -ms-flex-preferred-size: 70%;
+    
+        flex-basis: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
 .images{
     max-width: 100%;
     /* height: 500px; */
+    -webkit-transition : height 1s;
+    -o-transition : height 1s;
     transition : height 1s;
 }
 
 #imagesDiv{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 
@@ -97,9 +139,13 @@ nav div:hover{
 #bandSection{
     background : url('./images/splash-1763305_960_720.png');
     background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     padding-bottom: 10px;
 }
 
@@ -112,9 +158,13 @@ nav div:hover{
 }
 
 .profileCard{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: 20px;
     padding: 10px;
+    -webkit-transition :  background 1s;
+    -o-transition :  background 1s;
     transition :  background 1s;
 
 
@@ -128,10 +178,21 @@ nav div:hover{
 
 .profileCard .left{
     
+    display: -webkit-box;
+    
+    display: -ms-flexbox;
+    
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 8px;
     font-weight: 600;
     font-size: 18px;
@@ -149,17 +210,26 @@ nav div:hover{
 }
 
 .seeMoreButton{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-basis: 100%;
-    justify-content: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 10px;
 }
 
 /* footer */
 
 #footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;    
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;    
 }
 
 #footer h2{
@@ -185,12 +255,17 @@ nav div:hover{
     }
 
     #dashboard {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       height: auto;
     }
 
     .profileCard .left{
-        align-items : initial;
+        -webkit-box-align : initial;
+            -ms-flex-align : initial;
+                align-items : initial;
         font-weight: normal;
         font-size: 16px;
     }
@@ -204,9 +279,13 @@ nav div:hover{
         height: 600px;
     }
 
+   
+
     .images{
         max-width: 100%;
         /* height: 500px; */
+        -webkit-transition : height 0s;
+        -o-transition : height 0s;
         transition : height 0s;
     }
    
